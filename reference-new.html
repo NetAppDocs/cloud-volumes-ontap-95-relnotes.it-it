@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head class="at-element-marker">
+  <title>Novità di Cloud Volumes ONTAP 9.5 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Novità di Cloud Volumes ONTAP 9.5 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/it-it/cloud-volumes-ontap-95-relnotes/reference-new.html" />
+	<meta property="og:description" content="Cloud Volumes ONTAP 9.5 include diverse nuove funzionalità e miglioramenti." />
+  <meta property="og:image" content="https://docs.netapp.com/it-it/cloud-volumes-ontap-95-relnotes/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Volumes ONTAP 9.5 include diverse nuove funzionalità e miglioramenti.">
+  <meta name="keywords" content=" what"s new, new, features, release notes, enhancements"><!-- Icons -->
+  <link rel="icon" href="/it-it/cloud-volumes-ontap-95-relnotes/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/it-it/cloud-volumes-ontap-95-relnotes/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/it-it/cloud-volumes-ontap-95-relnotes/css/netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/it-it/cloud-volumes-ontap-95-relnotes/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/it-it/cloud-volumes-ontap-95-relnotes/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/it-it/cloud-volumes-ontap-95-relnotes/reference-new.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/cloud-volumes-ontap-95-relnotes/reference-new.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/cloud-volumes-ontap-95-relnotes/reference-new.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/cloud-volumes-ontap-95-relnotes/reference-new.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/cloud-volumes-ontap-95-relnotes/reference-new.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-95-relnotes/reference-new.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/cloud-volumes-ontap-95-relnotes/reference-new.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/cloud-volumes-ontap-95-relnotes/reference-new.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/cloud-volumes-ontap-95-relnotes/reference-new.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/cloud-volumes-ontap-95-relnotes/reference-new.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/cloud-volumes-ontap-95-relnotes/reference-new.html" />
+  <link rel='stylesheet' href='/it-it/cloud-volumes-ontap-95-relnotes/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    function addAdobeLaunch(adobeId) {
+      var head = document.getElementsByTagName('head')[0];
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/"+adobeId+".min.js";
+      head.appendChild(adobe);
+    }
+
+    function addGoogleAnalytics(gtagId) {
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id="+gtagId;
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gtagId);
+    }
+
+    function addConsent(consentId) {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/"+consentId+"/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = consentId;
+      head.appendChild(onetrustScript);
+    }addConsent("72570c5c-fe30-465f-b0e0-b77f7fb4ae34");
+    addAdobeLaunch("launch-e9ff3acac59f");
+    addGoogleAnalytics("UA-81697994-3");function OptanonWrapper() { }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/it-it/cloud-volumes-ontap-95-relnotes/js/na-search.js'></script><script src='/it-it/cloud-volumes-ontap-95-relnotes/js/na-pagenav.js'></script><script src='/it-it/cloud-volumes-ontap-95-relnotes/js/na-utility.js'></script>
+ <!--  
+  <link rel='stylesheet' href='/it-it/cloud-volumes-ontap-95-relnotes/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/it-it/cloud-volumes-ontap-95-relnotes/css/prism-netapp.css' type='text/css'>
+ -->
+
+  <!-- <script src='/it-it/cloud-volumes-ontap-95-relnotes/js/na-utility.js'></script> -->
+  <script src='/it-it/cloud-volumes-ontap-95-relnotes/js/clouddocs.js'></script>
+  <script src='/it-it/cloud-volumes-ontap-95-relnotes/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- <script src='/it-it/cloud-volumes-ontap-95-relnotes/js/toc.js'></script> -->
+  <!-- <script src='/it-it/cloud-volumes-ontap-95-relnotes/js/customscripts.js'></script> --><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/it-it/cloud-volumes-ontap-95-relnotes"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/it-it/cloud-volumes-ontap-95-relnotes/js/custom-dropdown.js'></script>
+  <script src='/it-it/cloud-volumes-ontap-95-relnotes/js/FileSaver.min.js'></script>
+  <script src='/it-it/cloud-volumes-ontap-95-relnotes/js/jszip-utils.min.js'></script>
+  <script src='/it-it/cloud-volumes-ontap-95-relnotes/js/jszip.min.js'></script>
+  <!-- <script src='/it-it/cloud-volumes-ontap-95-relnotes/js/pdf-ux.js'></script> -->
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div id="version-dropdown-new" class="custom-dropdown" >
+  <div class="custom-dropdown-select unselected" title="Cloud Volumes ONTAP 9.5">
+    <label>Versione</label>
+    <span translate="no" class="notranslate">Cloud Volumes ONTAP 9.5</span>
+    <img src="/it-it/cloud-volumes-ontap-95-relnotes/images/chevron_up.svg" alt="" class="custom-icon chevrondown invisible" />
+    <img src="/it-it/cloud-volumes-ontap-95-relnotes/images/chevron_down.svg" alt="" class="custom-icon chevronup" />
+  </div>
+
+  <ul class="custom-dropdown-menu"><li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-95-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.5</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.13.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9121-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.1</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9120-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9111-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.11.1</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9110-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.11.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9101-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.10.1</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-9100-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.10.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-991-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.9.1</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-990-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.9.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-98-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.8</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-97-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.7</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-96-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.6</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-94-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.4</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-93-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud ONTAP</span><span class="version"> 9.3</span></span>
+      </a>
+                     
+    </li>
+    
+  </ul>
+</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-volumes-ontap-95-relnotes.it-it/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/it-it/cloud-volumes-ontap-95-relnotes/reference-new.html&page-title=Novità di Cloud Volumes ONTAP 9.5" class="page-nav-contribute-link" role="button"><img src="/it-it/cloud-volumes-ontap-95-relnotes/images/discuss-sm.svg" alt="" class="github-icon" />Richiedi modifiche alla documentazione</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-volumes-ontap-95-relnotes/blob/main/reference-new.adoc" class="page-nav-contribute-link" role="button"><img src="/it-it/cloud-volumes-ontap-95-relnotes/images/edit-sm.svg" alt="" class="github-icon" />Modifica questa pagina</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/it-it/cloud-volumes-ontap-95-relnotes/images/article-sm.svg" alt="" class="github-icon" />Scopri come collaborare</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">IN QUESTA PAGINA</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Prodotto e soluzioni</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Supporto e training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Testimonianze dei clienti</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/company/contact-us/" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contatto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/it-it/cloud-volumes-ontap-95-relnotes/search.html"
+          data-type="widget" 
+          data-placeholder="Esplora la documentazione"
+          data-no-results-found="Nessun risultato per {query}"
+          data-did-you-mean="Cerca {suggestion}."
+          data-no-results-found-did-you-mean="Nessun risultato per {query}. Intendi {suggestion}?"
+          data-results-found="{hitCount} risultati trovati"
+          data-error-message="Si è verificato un problema durante il recupero dei risultati. Riprova."
+          data-error-reset="Reimposta ricerca"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">Italiano</span>
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/it-it/cloud-volumes-ontap-95-relnotes/reference-new.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-95-relnotes/reference-new.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-volumes-ontap-95-relnotes/reference-new.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-95-relnotes/reference-new.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-volumes-ontap-95-relnotes/reference-new.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-volumes-ontap-95-relnotes/reference-new.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/cloud-volumes-ontap-95-relnotes/reference-new.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/es-es/cloud-volumes-ontap-95-relnotes/reference-new.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/cloud-volumes-ontap-95-relnotes/reference-new.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
+    </div>
+    <!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <button id="btn-sidebar-collapse" onclick="hideSidebar()"><img src="/it-it/cloud-volumes-ontap-95-relnotes/images/collapse.png" alt="Comprimi pannello di navigazione"></button>
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/it-it/cloud-volumes-ontap-95-relnotes/images/pdf.png" alt="" width="16" height="16"/>PDF disponibili<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/it-it/cloud-volumes-ontap-95-relnotes/pdfs/fullsite-sidebar/Note_sulla_versione_di_Cloud_Volumes_ONTAP_9_5.pdf" >
+          <img src="/it-it/cloud-volumes-ontap-95-relnotes/images/pdf.png" alt="" width="16" height="16"/>PDF del sito di questa documentazione</a>
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/it-it/cloud-volumes-ontap-95-relnotes/images/pdf-zip.png" alt="" width="16" height="16"/>
+      <pre>Raccolta di documenti PDF separati<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/it-it/cloud-manager-family/"><img src="/it-it/cloud-volumes-ontap-95-relnotes/images/left_arrow.png" alt=""><pre>Tutta la documentazione di Cloud Manager</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note di rilascio home"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-95-relnotes/index.html">
+        Note di rilascio home
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Novità"
+      data-li-level="1#" 
+      class="  active "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-95-relnotes/reference-new.html">
+        Novità
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurazioni supportate"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-95-relnotes/reference-supported-configs.html">
+        Configurazioni supportate
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limiti di storage"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-95-relnotes/reference-storage-limits.html">
+        Limiti di storage
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Problemi noti"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-95-relnotes/reference-issues.html">
+        Problemi noti
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitazioni note"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-95-relnotes/reference-limitations.html">
+        Limitazioni note
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note legali"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-volumes-ontap-95-relnotes/legal-notices.html">
+        Note legali
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <div class="ie-utility">
+  <button id="btn-sidebar-expand" onclick="showSidebar()"><img src="/it-it/cloud-volumes-ontap-95-relnotes/images/expand.png" alt="Espandi pannello di navigazione"></button>
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/us-en/cloud/">Documentazione Cloud</a>
+        </li>
+        
+
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/it-it/cloud-manager-family/">BlueXP</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/it-it/cloud-volumes-ontap-95-relnotes/">Cloud&nbsp;Volumes&nbsp;ONTAP&nbsp;9.5&nbsp;release&nbsp;notes</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> La versione in lingua italiana fornita proviene da una traduzione automatica. Per eventuali incoerenze, fare riferimento alla versione in lingua inglese. </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Novità di Cloud Volumes ONTAP 9.5</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2023-05-23 21:37:25 +0000">05/23/2023</time>
+    
+  
+
+<span>Collaboratori
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Cloud Volumes ONTAP 9.5 include diverse nuove funzionalità e miglioramenti.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-volumes-ontap-95-relnotes/images/note.svg" alt="Nota">
+</td>
+<td class="content">
+Ulteriori funzionalità e miglioramenti sono stati introdotti anche nelle ultime versioni di Cloud Manager. Vedere <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html" target="_blank" rel="noopener">"Note di rilascio di Cloud Manager"</a> per ulteriori informazioni.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="9-5-p11-6-marzo-2020">9.5 P11 (6 marzo 2020)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La versione 9.5 della patch P11 per Cloud Volumes ONTAP è ora disponibile tramite Cloud Manager 3.8 e versioni successive. Cloud Manager ti chiederà di aggiornare i sistemi esistenti a questa release di patch. <a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.5P11" target="_blank" rel="noopener">"Visualizza l&#8217;elenco dei bug corretti nella patch P11"</a> (Accesso al NetApp Support Site richiesto).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="9-5-p10-12-gennaio-2020">9.5 P10 (12 gennaio 2020)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La versione 9.5 della patch P10 per Cloud Volumes ONTAP è ora disponibile tramite Cloud Manager. Cloud Manager ti chiederà di aggiornare i sistemi esistenti a questa release di patch. <a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.5P10" target="_blank" rel="noopener">"Visualizza l&#8217;elenco dei bug corretti nella patch P10"</a> (Accesso al NetApp Support Site richiesto).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="patch-9-5-p9-17-novembre-2019">Patch 9.5 P9 (17 novembre 2019)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La versione della patch 9.5 P9 per Cloud Volumes ONTAP è ora disponibile tramite Cloud Manager. Cloud Manager ti chiederà di aggiornare i sistemi esistenti a questa release di patch. <a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.5P9" target="_blank" rel="noopener">"Visualizzare l&#8217;elenco dei bug corretti nella patch P9"</a> (Accesso al NetApp Support Site richiesto).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="patch-9-5-p8-6-ottobre-2019">Patch 9.5 P8 (6 ottobre 2019)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>È ora disponibile la patch release 9.5 P8 per Cloud Volumes ONTAP. Cloud Manager ti chiederà di aggiornare i sistemi esistenti a questa release di patch. <a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.5P8" target="_blank" rel="noopener">"Visualizza l&#8217;elenco dei bug corretti nella patch P8"</a> (Accesso al NetApp Support Site richiesto).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="patch-9-5-p6-16-luglio-2019">Patch 9.5 P6 (16 luglio 2019)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>È ora disponibile la patch release 9.5 P6 per Cloud Volumes ONTAP. Cloud Manager ti chiederà di aggiornare i sistemi esistenti a questa release di patch. <a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.5P6" target="_blank" rel="noopener">"Visualizza l&#8217;elenco dei bug corretti nella patch P6"</a> (Accesso al NetApp Support Site richiesto).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-volumes-ontap-95-relnotes/images/note.svg" alt="Nota">
+</td>
+<td class="content">
+Cloud Manager richiede di eseguire l&#8217;aggiornamento a versioni di patch ONTAP specifiche che includono importanti correzioni per Cloud Volumes ONTAP. Ecco perché in queste note di rilascio si potrebbe notare una lacuna tra le release di patch. Sono elencate solo le patch che Cloud Manager mette a tua disposizione.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="patch-9-5-p4-16-maggio-2019">Patch 9.5 P4 (16 maggio 2019)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>È ora disponibile la patch release 9.5 P4 per Cloud Volumes ONTAP. Cloud Manager ti chiederà di aggiornare i sistemi esistenti a questa release di patch. <a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.5P4" target="_blank" rel="noopener">"Visualizza l&#8217;elenco dei bug corretti nella patch P4"</a> (Accesso al NetApp Support Site richiesto).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="supporto-per-lambiente-aws-c2s-2-maggio-2019">Supporto per l&#8217;ambiente AWS C2S (2 maggio 2019)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Volumes ONTAP 9.5 e Cloud Manager 3.6.4 sono ora disponibili negli Stati Uniti Intelligence Community (IC) attraverso l&#8217;ambiente AWS Commercial Cloud Services (C2S). È possibile implementare coppie ha e sistemi a nodo singolo in C2S.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html" target="_blank" rel="noopener">"Introduzione all&#8217;ambiente AWS C2S"</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="patch-9-5-p3-25-aprile-2019">Patch 9.5 P3 (25 aprile 2019)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>È ora disponibile la patch 9.5 P3 per Cloud Volumes ONTAP. <a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.5P3" target="_blank" rel="noopener">"Visualizzare l&#8217;elenco dei bug corretti nella patch P3"</a> (Accesso al NetApp Support Site richiesto).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="patch-9-5-p2-10-aprile-2019">Patch 9.5 P2 (10 aprile 2019)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>È ora disponibile la versione della patch 9.5 P2 per Cloud Volumes ONTAP. Questa patch include correzioni di bug e supporto per Flash cache con i nuovi tipi di istanze AWS EC2. Cloud Manager ti chiederà di aggiornare i sistemi esistenti a questa release di patch.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.5P2" target="_blank" rel="noopener">"Fare clic qui per vedere i bug corretti nella patch P2"</a> (Accesso al NetApp Support Site richiesto).</p>
+</div>
+<div class="sect2">
+<h3 id="supporto-di-flash-cache-con-nuovi-tipi-di-istanze-ec2">Supporto di Flash cache con nuovi tipi di istanze EC2</h3>
+<div class="paragraph">
+<p>I seguenti tipi di istanze EC2 sono ora supportati con le licenze Premium e BYOL:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>c5d.4xlarge</p>
+</li>
+<li>
+<p>c5d.9xlarge</p>
+</li>
+<li>
+<p>r5d.2xlarge</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Questi tipi di istanze includono lo storage NVMe locale, utilizzato da Cloud Volumes ONTAP come <em>Flash cache</em>. Flash cache accelera l&#8217;accesso ai dati attraverso il caching intelligente in tempo reale dei dati utente recentemente letti e dei metadati NetApp. È efficace per carichi di lavoro a lettura intensiva, inclusi database, e-mail e file service.</p>
+</div>
+<div class="paragraph">
+<p>La compressione deve essere disattivata su tutti i volumi per sfruttare i miglioramenti delle prestazioni di Flash cache. Quando crei un volume da Cloud Manager, puoi scegliere di non utilizzare l&#8217;efficienza dello storage, oppure creare un volume e poi <a href="http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html" target="_blank" rel="noopener">"Disattivare la compressione dei dati utilizzando l&#8217;interfaccia CLI"</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-volumes-ontap-95-relnotes/images/note.svg" alt="Nota">
+</td>
+<td class="content">
+Il ripristino della cache dopo un riavvio non è supportato con Cloud Volumes ONTAP.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="supporto-ha-nella-regione-azure-central-us-25-marzo-2019">Supporto HA nella regione Azure Central US (25 marzo 2019)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Le coppie HA sono ora supportate nella regione degli Stati Uniti centrali in Azure.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"Consulta l&#8217;elenco completo delle aree Azure supportate"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="patch-9-5-p1-18-marzo-2019">Patch 9.5 P1 (18 marzo 2019)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La patch release 9.5 P1 per Cloud Volumes ONTAP è ora disponibile per tutte le configurazioni. Cloud Manager ti chiederà di aggiornare i sistemi esistenti a questa release di patch.</p>
+</div>
+<div class="paragraph">
+<p>Se disponi di una coppia ha esistente in Azure, NetApp ti contatterà per aiutarti ad applicare la release della patch P1.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.5P1" target="_blank" rel="noopener">"Fare clic qui per vedere i bug corretti nella patch P1"</a> (Accesso al NetApp Support Site richiesto).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cloud-volumes-ontap-ha-è-ora-ga-in-azure-18-marzo-2019">Cloud Volumes ONTAP ha è ora GA in Azure (18 marzo 2019)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Con il rilascio della patch 9.5 P1, le coppie ha in Azure sono ora generalmente disponibili (GA). Non è più necessaria una licenza di anteprima.</p>
+</div>
+<div class="paragraph">
+<p>La release GA è disponibile nella maggior parte delle regioni Azure, ad eccezione di quanto segue:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Stati Uniti centrali</p>
+</li>
+<li>
+<p>Stati Uniti centro-nord</p>
+</li>
+<li>
+<p>Regioni US Gov</p>
+</li>
+<li>
+<p>Stati Uniti occidentali</p>
+</li>
+<li>
+<p>Stati Uniti centro-occidentali</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>La manutenzione in queste regioni può impedire la creazione di Cloud Volumes ONTAP e impedire il failover. Prevediamo di supportare queste regioni non appena la manutenzione viene completata.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"Consulta l&#8217;elenco completo delle aree Azure supportate"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="9-5-ga-per-aws-e-azure-4-febbraio-2019">9.5 GA per AWS e Azure (4 febbraio 2019)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La release di disponibilità generale (GA) di Cloud Volumes ONTAP 9.5 è ora disponibile in AWS e in Microsoft Azure (per i sistemi a nodo singolo solo in Azure). La release GA include correzioni della stabilità, funzionalità nuove e obsolete in AWS e una modifica dei limiti di capacità del sistema.</p>
+</div>
+<div class="sect2">
+<h3 id="limite-di-capacità-di-368-tb-per-tutte-le-configurazioni-premium-e-byol">Limite di capacità di 368 TB per tutte le configurazioni Premium e BYOL</h3>
+<div class="paragraph">
+<p>Il limite di capacità del sistema per Cloud Volumes ONTAP Premium e BYOL è ora di 368 TB in tutte le configurazioni: Nodo singolo e ha in AWS e Azure.</p>
+</div>
+<div class="paragraph">
+<p>Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità di 368 TB utilizzando solo i dischi. In questi casi, è possibile raggiungere il limite di capacità di 368 TB di <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"tiering dei dati inattivi sullo storage a oggetti"</a>. Ad esempio, un sistema a nodo singolo in Azure potrebbe avere 252 TB di capacità basata su disco, che consentirebbe fino a 116 TB di dati inattivi nello storage Azure Blob.</p>
+</div>
+<div class="paragraph">
+<p>Per informazioni sui limiti dei dischi, fare riferimento a. <a href="reference-storage-limits.html">"limiti di storage"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="supporto-per-istanze-m5-e-r5-in-aws">Supporto per istanze M5 e R5 in AWS</h3>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP ora supporta diversi tipi di istanze nelle famiglie M5 e R5:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Esplora</th>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Premium</th>
+<th class="tableblock halign-left valign-top">BYOL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5.xlange</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>m5.2xgrande</p>
+</li>
+<li>
+<p>r5.xlange</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>m5.4xgrande</p>
+</li>
+<li>
+<p>r5.2xgrande</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>m5.xlange</p>
+</li>
+<li>
+<p>m5.2xgrande</p>
+</li>
+<li>
+<p>m5.4xgrande</p>
+</li>
+<li>
+<p>r5.xlange</p>
+</li>
+<li>
+<p>r5.2xgrande</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Queste istanze utilizzano un hypervisor basato sulla tecnologia KVM. Di conseguenza, le istanze supportano un numero inferiore di dischi dati rispetto ad altri tipi di istanze: Fino a 24 dischi dati per sistemi a nodo singolo e 21 dischi dati per coppie ha. <a href="reference-storage-limits.html">"Scopri i limiti dello storage"</a>.</p>
+</div>
+<div class="paragraph">
+<p>Scopri di più <a href="https://aws.amazon.com/ec2/instance-types/m5/" target="_blank" rel="noopener">"Istanze M5"</a> e. <a href="https://aws.amazon.com/ec2/instance-types/r5/" target="_blank" rel="noopener">"Istanze R5"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="supporto-per-netapp-volume-encryption-in-aws">Supporto per NetApp Volume Encryption in AWS</h3>
+<div class="paragraph">
+<p><a href="https://www.netapp.com/us/media/ds-3899.pdf" target="_blank" rel="noopener">"NetApp Volume Encryption (NVE)"</a> è una tecnologia software per la crittografia dei dati inattivi di un volume alla volta. I dati, le copie Snapshot e i metadati sono crittografati. L&#8217;accesso ai dati viene fornito da una chiave XTS-AES-256 univoca, una per volume.</p>
+</div>
+<div class="paragraph">
+<p>Attualmente, Cloud Volumes ONTAP supporta la crittografia dei volumi NetApp con un server di gestione delle chiavi esterno. Onboard Key Manager non è supportato. I Key Manager supportati sono disponibili in <a href="http://mysupport.netapp.com/matrix" target="_blank" rel="noopener">"Tool di matrice di interoperabilità NetApp"</a> Nella soluzione <strong>Key Manager</strong>.</p>
+</div>
+<div class="paragraph">
+<p>È necessario configurare NetApp Volume Encryption dalla CLI. È quindi possibile utilizzare CLI o System Manager per attivare la crittografia su volumi specifici. Cloud Manager non supporta NetApp Volume Encryption dalla sua interfaccia utente e dalle sue API.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html" target="_blank" rel="noopener">"Scopri come configurare NetApp Volume Encryption"</a></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-volumes-ontap-95-relnotes/images/note.svg" alt="Nota">
+</td>
+<td class="content">
+La crittografia dei volumi NetApp è una tecnologia di crittografia diversa dalla crittografia Cloud Volumes ONTAP, che ha crittografato i dati a livello aggregato e ora è obsoleta. Non è possibile eseguire un aggiornamento tra queste due tecnologie di crittografia. Vedere <a href="#funzionalità-obsolete-in-aws">Funzionalità obsolete in AWS</a> per ulteriori informazioni.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="funzionalità-obsolete-in-aws">Funzionalità obsolete in AWS</h3>
+<div class="paragraph">
+<p>Due funzionalità non sono più supportate nella versione 9.5.</p>
+</div>
+<div class="sect3">
+<h4 id="la-crittografia-a-livello-aggregato-di-cloud-volumes-ontap-ora-supporta-solo-la-crittografia-nativa-aws-dei-dischi">La crittografia a livello aggregato di Cloud Volumes ONTAP ora supporta solo la crittografia nativa AWS dei dischi</h4>
+<div class="paragraph">
+<p>La crittografia dei dati inattivi degli aggregati che utilizzano gestori di chiavi esterni non è più supportata. Se si sta utilizzando questa funzione e si desidera eseguire l&#8217;aggiornamento, è necessario avviare un nuovo sistema 9.5, quindi <a href="https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html">"replicare i dati"</a> a quel sistema.</p>
+</div>
+<div class="paragraph">
+<p>La crittografia dei dati inattivi è ancora supportata utilizzando altri metodi. È possibile crittografare i dati utilizzando NetApp Volume Encryption o AWS Key Management Service (KMS). <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-security.html" target="_blank" rel="noopener">"Scopri di più sulla crittografia dei dati inattivi"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="c4-2xlarge-non-è-più-supportato">c4.2xlarge non è più supportato</h4>
+<div class="paragraph">
+<p>Il tipo di istanza grande c4.2xnon è supportato con la release 9.5. Se si sta utilizzando questo tipo di istanza, è necessario prima <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html">"passare a un nuovo tipo di istanza"</a> prima di eseguire l&#8217;aggiornamento alla versione 9.5.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="9-5-rc1-per-azure-4-dicembre-2018">9.5 RC1 per Azure (4 dicembre 2018)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Volumes ONTAP 9.5 RC1 è ora disponibile in Microsoft Azure. La versione 9.5 sarà disponibile in AWS in un secondo momento.</p>
+</div>
+<div class="sect2">
+<h3 id="anteprima-delle-coppie-ad-alta-disponibilità-ha-in-microsoft-azure">Anteprima delle coppie ad alta disponibilità (ha) in Microsoft Azure</h3>
+<div class="paragraph">
+<p>È ora disponibile un&#8217;anteprima delle coppie Cloud Volumes ONTAP ha in Microsoft Azure. Una coppia ha offre affidabilità Enterprise e operazioni continue in caso di guasti nel tuo ambiente cloud. Analogamente a un cluster ONTAP fisico, lo storage in una coppia Azure ha viene condiviso tra i due nodi.</p>
+</div>
+<div class="paragraph">
+<p>Le coppie HA in Azure sono disponibili come anteprima. Puoi richiedere una licenza di anteprima contattandoci all&#8217;indirizzo <a href="mailto:ng-Cloud-Volume-ONTAP-preview@netapp.com">ng-Cloud-Volume-ONTAP-preview@netapp.com</a>.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-azure.html" target="_blank" rel="noopener">"Scopri di più sulle coppie ha in Azure"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="performance-di-rete-migliorate-in-azure">Performance di rete migliorate in Azure</h3>
+<div class="paragraph">
+<p>I sistemi Cloud Volumes ONTAP sono ora abilitati con <a href="https://docs.microsoft.com/en-us/azure/virtual-network/create-vm-accelerated-networking-cli" target="_blank" rel="noopener">"Networking accelerato"</a> In Azure. Cloud Manager consente di accelerare il networking quando si esegue l&#8217;aggiornamento a 9.5 e quando si implementano nuovi sistemi 9.5.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="supporto-per-nuove-aree-azure">Supporto per nuove aree Azure</h3>
+<div class="paragraph">
+<p>È ora possibile implementare Cloud Volumes ONTAP nella regione centrale della Francia.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="supporto-per-netapp-volume-encryption-in-azure">Supporto per NetApp Volume Encryption in Azure</h3>
+<div class="paragraph">
+<p><a href="https://www.netapp.com/us/media/ds-3899.pdf" target="_blank" rel="noopener">"NetApp Volume Encryption (NVE)"</a> è una tecnologia software per la crittografia dei dati inattivi di un volume alla volta. I dati, le copie Snapshot e i metadati sono crittografati. L&#8217;accesso ai dati viene fornito da una chiave XTS-AES-256 univoca, una per volume.</p>
+</div>
+<div class="paragraph">
+<p>Attualmente, Cloud Volumes ONTAP supporta la crittografia dei volumi NetApp con un server di gestione delle chiavi esterno. Onboard Key Manager non è supportato. I Key Manager supportati sono disponibili in <a href="http://mysupport.netapp.com/matrix" target="_blank" rel="noopener">"Tool di matrice di interoperabilità NetApp"</a> Nella soluzione <strong>Key Manager</strong>.</p>
+</div>
+<div class="paragraph">
+<p>È necessario configurare NetApp Volume Encryption dalla CLI. È quindi possibile utilizzare CLI o System Manager per attivare la crittografia su volumi specifici. Al momento Cloud Manager non supporta NetApp Volume Encryption.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html" target="_blank" rel="noopener">"Scopri come configurare NetApp Volume Encryption"</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="note-sullaggiornamento">Note sull&#8217;aggiornamento</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Gli aggiornamenti di Cloud Volumes ONTAP devono essere completati da Cloud Manager. Non aggiornare Cloud Volumes ONTAP utilizzando Gestione di sistema o l&#8217;interfaccia CLI. In questo modo si può influire sulla stabilità del sistema.</p>
+</li>
+<li>
+<p>È possibile eseguire l&#8217;aggiornamento a Cloud Volumes ONTAP 9.5 dalla versione 9.4.</p>
+</li>
+<li>
+<p>L&#8217;aggiornamento di un sistema a nodo singolo porta il sistema offline per un massimo di 25 minuti, durante i quali l&#8217;i/o viene interrotto.</p>
+</li>
+<li>
+<p>L&#8217;aggiornamento di una coppia ha è senza interruzioni e l&#8217;i/o è ininterrotto. Durante questo processo di aggiornamento senza interruzioni, ogni nodo viene aggiornato in tandem per continuare a fornire i/o ai client.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/copyright/">© 2023 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Condizioni per l'utilizzo</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Direttiva sulla privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Direttiva sui Cookie</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Impostazioni cookie</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a target="_self" href="javascript:netapp_mailto()">Invia feedback su questa pagina</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-volumes-ontap-95-relnotes/images/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/it-it/cloud-volumes-ontap-95-relnotes/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/it-it/cloud-volumes-ontap-95-relnotes/js/prism.js'></script>
+      <script type="text/javascript" src='/it-it/cloud-volumes-ontap-95-relnotes/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/it-it/cloud-volumes-ontap-95-relnotes/js/tabbed-blocks.js'></script>
+    <script src='/it-it/cloud-volumes-ontap-95-relnotes/js/sidebar.js'></script>
+  </body></html>
