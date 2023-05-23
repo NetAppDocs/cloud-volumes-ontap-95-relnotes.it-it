@@ -1,0 +1,16 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: These release notes describe new features, limitations, and known issues specific to Cloud Volumes ONTAP 9.5. 
+summary: Queste note di rilascio descrivono nuove funzionalità, limitazioni e problemi noti specifici di Cloud Volumes ONTAP 9.5. 
+---
+= Note sulla versione di Cloud Volumes ONTAP 9.5
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
