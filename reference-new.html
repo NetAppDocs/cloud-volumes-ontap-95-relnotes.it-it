@@ -511,7 +511,7 @@
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
 </script><div class="prod-nav" id="product-nav">
-  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/it-it/cloud-manager-family/"><img src="/it-it/cloud-volumes-ontap-95-relnotes/images/left_arrow.png" alt=""><pre>Tutta la documentazione di Cloud Manager</pre></a>
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/it-it/bluexp-family/"><img src="/it-it/cloud-volumes-ontap-95-relnotes/images/left_arrow.png" alt=""><pre>Tutta la documentazione BlueXP</pre></a>
 </div><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li 
       data-pdf-exists="true" 
@@ -597,7 +597,7 @@
 
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/it-it/cloud-manager-family/">BlueXP</a>
+          <a href="https://docs.netapp.com/it-it/bluexp-family/">BlueXP</a>
         </li>
         
 
@@ -633,7 +633,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-23 21:37:25 +0000">05/23/2023</time>
+    <time datetime="2023-05-31 18:09:30 +0000">05/31/2023</time>
     
   
 
@@ -655,7 +655,7 @@
 <img src="/us-en/cloud-volumes-ontap-95-relnotes/images/note.svg" alt="Nota">
 </td>
 <td class="content">
-Ulteriori funzionalità e miglioramenti sono stati introdotti anche nelle ultime versioni di Cloud Manager. Vedere <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html" target="_blank" rel="noopener">"Note di rilascio di Cloud Manager"</a> per ulteriori informazioni.
+Ulteriori funzionalità e miglioramenti sono stati introdotti anche nelle ultime versioni di Cloud Manager. Vedere <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html" target="_blank" rel="noopener">"Note di rilascio di Cloud Manager"</a> per ulteriori informazioni.
 </td>
 </tr>
 </table>
@@ -729,7 +729,7 @@ Cloud Manager richiede di eseguire l&#8217;aggiornamento a versioni di patch ONT
 <p>Cloud Volumes ONTAP 9.5 e Cloud Manager 3.6.4 sono ora disponibili negli Stati Uniti Intelligence Community (IC) attraverso l&#8217;ambiente AWS Commercial Cloud Services (C2S). È possibile implementare coppie ha e sistemi a nodo singolo in C2S.</p>
 </div>
 <div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html" target="_blank" rel="noopener">"Introduzione all&#8217;ambiente AWS C2S"</a></p>
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html" target="_blank" rel="noopener">"Introduzione all&#8217;ambiente AWS C2S"</a></p>
 </div>
 </div>
 </div>
@@ -862,7 +862,7 @@ Il ripristino della cache dopo un riavvio non è supportato con Cloud Volumes ON
 <p>Il limite di capacità del sistema per Cloud Volumes ONTAP Premium e BYOL è ora di 368 TB in tutte le configurazioni: Nodo singolo e ha in AWS e Azure.</p>
 </div>
 <div class="paragraph">
-<p>Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità di 368 TB utilizzando solo i dischi. In questi casi, è possibile raggiungere il limite di capacità di 368 TB di <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"tiering dei dati inattivi sullo storage a oggetti"</a>. Ad esempio, un sistema a nodo singolo in Azure potrebbe avere 252 TB di capacità basata su disco, che consentirebbe fino a 116 TB di dati inattivi nello storage Azure Blob.</p>
+<p>Per alcune configurazioni, i limiti dei dischi impediscono di raggiungere il limite di capacità di 368 TB utilizzando solo i dischi. In questi casi, è possibile raggiungere il limite di capacità di 368 TB di <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"tiering dei dati inattivi sullo storage a oggetti"</a>. Ad esempio, un sistema a nodo singolo in Azure potrebbe avere 252 TB di capacità basata su disco, che consentirebbe fino a 116 TB di dati inattivi nello storage Azure Blob.</p>
 </div>
 <div class="paragraph">
 <p>Per informazioni sui limiti dei dischi, fare riferimento a. <a href="reference-storage-limits.html">"limiti di storage"</a>.</p>
@@ -952,7 +952,7 @@ Il ripristino della cache dopo un riavvio non è supportato con Cloud Volumes ON
 <p>È necessario configurare NetApp Volume Encryption dalla CLI. È quindi possibile utilizzare CLI o System Manager per attivare la crittografia su volumi specifici. Cloud Manager non supporta NetApp Volume Encryption dalla sua interfaccia utente e dalle sue API.</p>
 </div>
 <div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html" target="_blank" rel="noopener">"Scopri come configurare NetApp Volume Encryption"</a></p>
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" target="_blank" rel="noopener">"Scopri come configurare NetApp Volume Encryption"</a></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -975,16 +975,16 @@ La crittografia dei volumi NetApp è una tecnologia di crittografia diversa dall
 <div class="sect3">
 <h4 id="la-crittografia-a-livello-aggregato-di-cloud-volumes-ontap-ora-supporta-solo-la-crittografia-nativa-aws-dei-dischi">La crittografia a livello aggregato di Cloud Volumes ONTAP ora supporta solo la crittografia nativa AWS dei dischi</h4>
 <div class="paragraph">
-<p>La crittografia dei dati inattivi degli aggregati che utilizzano gestori di chiavi esterni non è più supportata. Se si sta utilizzando questa funzione e si desidera eseguire l&#8217;aggiornamento, è necessario avviare un nuovo sistema 9.5, quindi <a href="https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html">"replicare i dati"</a> a quel sistema.</p>
+<p>La crittografia dei dati inattivi degli aggregati che utilizzano gestori di chiavi esterni non è più supportata. Se si sta utilizzando questa funzione e si desidera eseguire l&#8217;aggiornamento, è necessario avviare un nuovo sistema 9.5, quindi <a href="https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html">"replicare i dati"</a> a quel sistema.</p>
 </div>
 <div class="paragraph">
-<p>La crittografia dei dati inattivi è ancora supportata utilizzando altri metodi. È possibile crittografare i dati utilizzando NetApp Volume Encryption o AWS Key Management Service (KMS). <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-security.html" target="_blank" rel="noopener">"Scopri di più sulla crittografia dei dati inattivi"</a>.</p>
+<p>La crittografia dei dati inattivi è ancora supportata utilizzando altri metodi. È possibile crittografare i dati utilizzando NetApp Volume Encryption o AWS Key Management Service (KMS). <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-security.html" target="_blank" rel="noopener">"Scopri di più sulla crittografia dei dati inattivi"</a>.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="c4-2xlarge-non-è-più-supportato">c4.2xlarge non è più supportato</h4>
 <div class="paragraph">
-<p>Il tipo di istanza grande c4.2xnon è supportato con la release 9.5. Se si sta utilizzando questo tipo di istanza, è necessario prima <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html">"passare a un nuovo tipo di istanza"</a> prima di eseguire l&#8217;aggiornamento alla versione 9.5.</p>
+<p>Il tipo di istanza grande c4.2xnon è supportato con la release 9.5. Se si sta utilizzando questo tipo di istanza, è necessario prima <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html">"passare a un nuovo tipo di istanza"</a> prima di eseguire l&#8217;aggiornamento alla versione 9.5.</p>
 </div>
 </div>
 </div>
@@ -1005,7 +1005,7 @@ La crittografia dei volumi NetApp è una tecnologia di crittografia diversa dall
 <p>Le coppie HA in Azure sono disponibili come anteprima. Puoi richiedere una licenza di anteprima contattandoci all&#8217;indirizzo <a href="mailto:ng-Cloud-Volume-ONTAP-preview@netapp.com">ng-Cloud-Volume-ONTAP-preview@netapp.com</a>.</p>
 </div>
 <div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-azure.html" target="_blank" rel="noopener">"Scopri di più sulle coppie ha in Azure"</a>.</p>
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html" target="_blank" rel="noopener">"Scopri di più sulle coppie ha in Azure"</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1032,7 +1032,7 @@ La crittografia dei volumi NetApp è una tecnologia di crittografia diversa dall
 <p>È necessario configurare NetApp Volume Encryption dalla CLI. È quindi possibile utilizzare CLI o System Manager per attivare la crittografia su volumi specifici. Al momento Cloud Manager non supporta NetApp Volume Encryption.</p>
 </div>
 <div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html" target="_blank" rel="noopener">"Scopri come configurare NetApp Volume Encryption"</a></p>
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html" target="_blank" rel="noopener">"Scopri come configurare NetApp Volume Encryption"</a></p>
 </div>
 </div>
 </div>
