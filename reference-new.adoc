@@ -187,7 +187,7 @@ Scopri di più https://aws.amazon.com/ec2/instance-types/m5/["Istanze M5"^] e. h
 
 === Supporto per NetApp Volume Encryption in AWS
 
-https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption (NVE)"^] è una tecnologia software per la crittografia dei dati inattivi di un volume alla volta. I dati, le copie Snapshot e i metadati sono crittografati. L'accesso ai dati viene fornito da una chiave XTS-AES-256 univoca, una per volume.
+https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption (NVE)"^] è una tecnologia basata su software per crittografare i dati a riposo, un volume alla volta. I dati, le copie Snapshot e i metadati sono crittografati. L'accesso ai dati viene fornito da una chiave XTS-AES-256 univoca, una per volume.
 
 Attualmente, Cloud Volumes ONTAP supporta la crittografia dei volumi NetApp con un server di gestione delle chiavi esterno. Onboard Key Manager non è supportato. I Key Manager supportati sono disponibili in http://mysupport.netapp.com/matrix["Tool di matrice di interoperabilità NetApp"^] Nella soluzione *Key Manager*.
 
@@ -250,7 +250,7 @@ I sistemi Cloud Volumes ONTAP sono ora abilitati con https://docs.microsoft.com/
 
 === Supporto per NetApp Volume Encryption in Azure
 
-https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption (NVE)"^] è una tecnologia software per la crittografia dei dati inattivi di un volume alla volta. I dati, le copie Snapshot e i metadati sono crittografati. L'accesso ai dati viene fornito da una chiave XTS-AES-256 univoca, una per volume.
+https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption (NVE)"^] è una tecnologia basata su software per crittografare i dati a riposo, un volume alla volta. I dati, le copie Snapshot e i metadati sono crittografati. L'accesso ai dati viene fornito da una chiave XTS-AES-256 univoca, una per volume.
 
 Attualmente, Cloud Volumes ONTAP supporta la crittografia dei volumi NetApp con un server di gestione delle chiavi esterno. Onboard Key Manager non è supportato. I Key Manager supportati sono disponibili in http://mysupport.netapp.com/matrix["Tool di matrice di interoperabilità NetApp"^] Nella soluzione *Key Manager*.
 
