@@ -209,7 +209,6 @@
   <block id="aa894911c7a20e27572cf7a8c1e15231" category="cell">Massimo per portset</block>
   <block id="7c8102fb403c417ae4b6e28c0e3352ba" category="cell">*Portset*</block>
   <block id="86356f570acc8683cfbf184efa49892d" category="summary">Queste note di rilascio descrivono nuove funzionalità, limitazioni e problemi noti specifici di Cloud Volumes ONTAP 9.5.</block>
-  <block id="543ec7e9ddd2b6bc0d9506114c6dda6f" category="doc">Note sulla versione di Cloud Volumes ONTAP 9.5</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">Le limitazioni note identificano piattaforme, dispositivi o funzioni non supportate da questa versione del prodotto o che non interagiscono correttamente con esso. Esaminare attentamente queste limitazioni.</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">Limitazioni note</block>
   <block id="1ac484b7039a7a63fa107c6b607c9db1" category="section-title">Limitazioni generali</block>
@@ -371,7 +370,6 @@
   <block id="77fc7cf72a29c8c6c88ed457fcdd2f3c" category="list-text">È possibile eseguire l'aggiornamento a Cloud Volumes ONTAP 9.5 dalla versione 9.4.</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">L'aggiornamento di un sistema a nodo singolo porta il sistema offline per un massimo di 25 minuti, durante i quali l'i/o viene interrotto.</block>
   <block id="00795e3f043d0bab791590ffc0257204" category="list-text">L'aggiornamento di una coppia ha è senza interruzioni e l'i/o è ininterrotto. Durante questo processo di aggiornamento senza interruzioni, ogni nodo viene aggiornato in tandem per continuare a fornire i/o ai client.</block>
-  <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">Note di rilascio home</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novità</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Inizia subito</block>
   <block id="e19968c5ebc4b94a271992f4b0563be8" category="sidebar">Configurazioni e limiti</block>
@@ -400,4 +398,5 @@
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="7c9d324d1d8b491ad2ad038c3ae1a08d" category="paragraph"><block ref="88f79bf25d1193134b67da843a562378" category="inline-link-rx"></block> è una tecnologia basata su software per crittografare i dati a riposo, un volume alla volta. I dati, le copie Snapshot e i metadati sono crittografati. L'accesso ai dati viene fornito da una chiave XTS-AES-256 univoca, una per volume.</block>
+  <block id="768e5fecad4c27b08f9ffd5fd34e1330" category="sidebar">Note sulla versione di Cloud Volumes ONTAP 9,5</block>
 </blocks>
