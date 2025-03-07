@@ -104,7 +104,7 @@ NOTE: Il ripristino della cache dopo un riavvio non è supportato con Cloud Volu
 
 Le coppie HA sono ora supportate nella regione degli Stati Uniti centrali in Azure.
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Consulta l'elenco completo delle aree Azure supportate"^].
+https://bluexp.netapp.com/cloud-volumes-global-regions["Consulta l'elenco completo delle aree Azure supportate"^].
 
 
 
@@ -133,7 +133,7 @@ La release GA è disponibile nella maggior parte delle regioni Azure, ad eccezio
 
 La manutenzione in queste regioni può impedire la creazione di Cloud Volumes ONTAP e impedire il failover. Prevediamo di supportare queste regioni non appena la manutenzione viene completata.
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Consulta l'elenco completo delle aree Azure supportate"^].
+https://bluexp.netapp.com/cloud-volumes-global-regions["Consulta l'elenco completo delle aree Azure supportate"^].
 
 
 

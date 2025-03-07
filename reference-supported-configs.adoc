@@ -82,7 +82,7 @@ Note:
 . Quando si sceglie un tipo di istanza EC2, è possibile specificare se si tratta di un'istanza condivisa o dedicata.
 . I dischi rigidi a freddo non sono supportati con coppie ha.
 . Le migliori prestazioni di scrittura sono abilitate quando si utilizzano SSD EBS con standard Cloud Volumes ONTAP, Premium e BYOL.
-. Per il supporto della regione AWS, vedere https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].
+. Per il supporto regionale AWS, vedere https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].
 
 
 
@@ -130,7 +130,7 @@ Note:
 . Se si abilita il tiering dei dati, il limite di capacità di un sistema rimane invariato. Il limite di capacità include sia dischi che storage a oggetti.
 . Il tiering dei dati non è supportato con il tipo di macchina virtuale DS3_v2.
 . Le migliori prestazioni di scrittura sono abilitate quando si utilizzano dischi Azure Premium Storage, ma non quando si utilizza il tipo di macchina virtuale DS3_v2.
-. Per il supporto della regione Azure, vedere https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].
+. Per il supporto dell'area Azure, vedere https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].
 
 
 
@@ -169,5 +169,5 @@ Quando si implementa Cloud Volumes ONTAP come coppia ha in Azure, è possibile s
 Note:
 
 . Il tiering dei dati non è supportato con le coppie ha.
-. Per il supporto della regione Azure, vedere https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].
+. Per il supporto dell'area Azure, vedere https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes Global Regions"^].
 
